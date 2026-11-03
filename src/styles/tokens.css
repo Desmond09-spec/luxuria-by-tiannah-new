@@ -1,0 +1,89 @@
+:root {
+  /* Palette — warm bone, ink, and a single muted clay accent */
+  --bone: #f4f0ea;
+  --bone-2: #ebe5dc;
+  --ink: #1a1714;
+  --ink-2: #2a2522;
+  --ash: #6b635a;
+  --ash-2: #928a7e;
+  --clay: #b08a4f;
+  --clay-deep: #8a6a3e;
+  --line: rgba(26, 23, 20, 0.12);
+
+  /* Type */
+  --serif: "Cormorant Garamond", "Times New Roman", serif;
+  --sans: "Jost", -apple-system, system-ui, sans-serif;
+
+  /* Scale — editorial */
+  --t-display: clamp(3.5rem, 11vw, 11rem);
+  --t-h1: clamp(2.5rem, 6vw, 5.5rem);
+  --t-h2: clamp(1.75rem, 3.2vw, 3rem);
+  --t-h3: clamp(1.25rem, 1.6vw, 1.75rem);
+  --t-body: 1rem;
+  --t-small: 0.8125rem;
+  --t-eyebrow: 0.6875rem;
+
+  /* Spacing — 8px base, generous */
+  --s-1: 0.5rem;
+  --s-2: 1rem;
+  --s-3: 1.5rem;
+  --s-4: 2rem;
+  --s-5: 3rem;
+  --s-6: 4rem;
+  --s-7: 6rem;
+  --s-8: 9rem;
+  --s-9: 14rem;
+
+  /* Layout */
+  --pad-x: clamp(1.25rem, 4vw, 4rem);
+  --max-w: 92rem;
+  --nav-h: 4.75rem;
+
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: var(--t-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--bone);
+}

@@ -1,0 +1,53 @@
+/* Responsive overrides — keep composition, collapse grids */
+@media (max-width: 64rem) {
+  .nav-links {
+    display: none !important;
+  }
+}
+
+@media (max-width: 56rem) {
+  .atelier-grid,
+  .visit-grid,
+  .footer-grid,
+  .detail-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--s-5) !important;
+  }
+  .atelier-grid img,
+  .visit-grid img {
+    width: 100% !important;
+    margin: 0 !important;
+    height: min(60vh, 38rem) !important;
+  }
+  .journal-text-overlap {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --s-9: 7rem;
+    --s-8: 5rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: var(--s-4) var(--s-3) !important;
+  }
+  .product-grid > * {
+    margin-top: 0 !important;
+  }
+  .journal-text {
+    width: 90% !important;
+    margin-top: -10vh !important;
+  }
+}
+
+@media (max-width: 34rem) {
+  .product-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .journal-text {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
